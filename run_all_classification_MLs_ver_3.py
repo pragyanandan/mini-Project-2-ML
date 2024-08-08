@@ -248,6 +248,7 @@ def evaluate_classification_models(models, df, target_var, feature_list, target_
         plt.title(f'Test {metric.capitalize()} Comparison')
         plt.ylabel(f'Test {metric.capitalize()}')
         plt.xlabel('Model Type')
+        plt.xticks(rotation=45)  # Rotate x-axis labels by 45 degrees
         plt.show()
 
     # Plot ROC AUC curves for all models
